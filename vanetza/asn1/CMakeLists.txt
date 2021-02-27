@@ -21,6 +21,7 @@ if(VANETZA_ASN1_WITH_ASN1C)
         ${PROJECT_SOURCE_DIR}/asn1/EN302637-3v131-DENM.asn
         ${PROJECT_SOURCE_DIR}/asn1/ISO_TS_19091_CPM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TR103562v211.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103300-3v211-VAM.asn
     )
     set(_pki_asn1_files
         ${PROJECT_SOURCE_DIR}/asn1/TS102941v131-BaseTypes.asn
