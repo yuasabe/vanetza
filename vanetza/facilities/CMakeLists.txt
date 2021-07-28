@@ -1,5 +1,6 @@
 set(CXX_SOURCES
     cam_functions.cpp
+    cpm_functions.cpp
     path_history.cpp
     path_point.cpp
 )
