@@ -1,6 +1,7 @@
 #include "ethernet_device.hpp"
 #include "benchmark_application.hpp"
 #include "cam_application.hpp"
+#include "cpm_application.hpp"
 #include "hello_application.hpp"
 #include "link_layer.hpp"
 #include "positioning.hpp"
@@ -30,8 +31,11 @@ int main(int argc, const char** argv)
         ("cam-interval", po::value<unsigned>()->default_value(1000), "CAM sending interval in milliseconds.")
         ("print-rx-cam", "Print received CAMs")
         ("print-tx-cam", "Print generated CAMs")
+        ("cpm-interval", po::value<unsigned>()->default_value(1000), "CPM sending interval in milliseconds.")
+        ("print-rx-cpm", "Print received CPMs")
+        ("print-tx-cpm", "Print generated CPMs")
         ("benchmark", "Enable benchmarking")
-        ("applications,a", po::value<std::vector<std::string>>()->default_value({"ca"}, "ca")->multitoken(), "Run applications [ca,hello,benchmark]")
+        ("applications,a", po::value<std::vector<std::string>>()->default_value({"ca"}, "ca")->multitoken(), "Run applications [ca,cp,hello,benchmark]")
         ("non-strict", "Set MIB parameter ItsGnSnDecapResultHandling to NON_STRICT")
     ;
     add_positioning_options(options);
@@ -141,6 +145,14 @@ int main(int argc, const char** argv)
                 ca->print_received_message(vm.count("print-rx-cam") > 0);
                 ca->print_generated_message(vm.count("print-tx-cam") > 0);
                 apps.emplace(app_name, std::move(ca));
+            } else if (app_name == "cp") {
+                std::unique_ptr<CpmApplication> cp {
+                    new CpmApplication(*positioning, trigger.runtime())
+                };
+                cp->set_interval(std::chrono::milliseconds(vm["cpm-interval"].as<unsigned>()));
+                cp->print_received_message(vm.count("print-rx-cpm") > 0);
+                cp->print_generated_message(vm.count("print-tx-cpm") > 0);
+                apps.emplace(app_name, std::move(cp));
             } else if (app_name == "hello") {
                 std::unique_ptr<HelloApplication> hello {
                     new HelloApplication(io_service, std::chrono::milliseconds(800))
