@@ -56,8 +56,8 @@ void CpmApplication::on_timer(Clock::time_point) {
     vanetza::asn1::Cpm message;
 
     ItsPduHeader_t& header = message->header;
-    header.protocolVersion = 15;
-    header.messageID = 15;
+    header.protocolVersion = 1;
+    header.messageID = 14;
     header.stationID = 1;
 
     const auto time_now = duration_cast<milliseconds> (runtime_.now().time_since_epoch());
@@ -77,8 +77,8 @@ void CpmApplication::on_timer(Clock::time_point) {
     management.stationType = StationType_passengerCar;
     copy(position, management.referencePosition);
 
-    cpm.cpmParameters.stationDataContainer = NULL;
-    cpm.cpmParameters.perceptionData = NULL;
+    // cpm.cpmParameters.stationDataContainer = NULL;
+    // cpm.cpmParameters.perceptionData = NULL;
 
     std::string error;
     if (!message.validate(error)) {
