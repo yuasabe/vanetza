@@ -82,7 +82,7 @@ namespace vanetza {
                 prefix("Station Data Container") << "\n";
             }
 
-            if (cpm.cpmParameters.perceptionData) {
+            if (cpm.cpmParameters.perceivedObjectContainer) {
                 prefix("Perception Data Container") << "\n";
             }
         }
