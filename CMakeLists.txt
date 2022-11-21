@@ -29,7 +29,7 @@ set(THREADS_PREFER_PTHREAD_FLAG TRUE)
 find_package(Threads MODULE)
 
 # Build configuration options
-option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+option(BUILD_SHARED_LIBS "Build shared libraries" ON)
 
 option(BUILD_TESTS "Build unit tests" OFF)
 if(BUILD_TESTS)
