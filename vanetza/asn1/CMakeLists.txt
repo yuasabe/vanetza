@@ -22,7 +22,7 @@ if(VANETZA_ASN1_WITH_ASN1C)
     )
 
     set(_its_asn1_files_depending_on_iso
-        ${PROJECT_SOURCE_DIR}/asn1/TR103562v211-CPM.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TR103562v211-CPM_edited.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-MAPEM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-RTCMEM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-SPATEM.asn
