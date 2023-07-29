@@ -17,12 +17,17 @@ if(VANETZA_ASN1_WITH_ASN1C)
 
     set(_its_asn1_files
         ${PROJECT_SOURCE_DIR}/asn1/TS102894-2v131-CDD.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS102894-2v211-CDD.asn
         ${PROJECT_SOURCE_DIR}/asn1/EN302637-2v141-CAM.asn
         ${PROJECT_SOURCE_DIR}/asn1/EN302637-3v131-DENM.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103324v211-CPM-OriginatingStationContainers.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103324v211-CPM-PerceivedObjectContainer.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103324v211-CPM-PerceptionRegionContainer.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103324v211-CPM-SensorInformationContainer.asn
+        ${PROJECT_SOURCE_DIR}/asn1/TS103324v211-CPM-PDU-Descriptions.asn
     )
 
     set(_its_asn1_files_depending_on_iso
-        ${PROJECT_SOURCE_DIR}/asn1/TR103562v211-CPM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-MAPEM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-RTCMEM.asn
         ${PROJECT_SOURCE_DIR}/asn1/TS103301v211-SPATEM.asn
