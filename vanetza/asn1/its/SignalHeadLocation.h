@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "NodeOffsetPointXY.h"
-#include "DeltaAltitude.h"
+#include "ITS-Container_DeltaAltitude.h"
 #include "SignalGroupID.h"
 #include "constr_SEQUENCE.h"
 
@@ -24,7 +24,7 @@ extern "C" {
 /* SignalHeadLocation */
 typedef struct SignalHeadLocation {
 	NodeOffsetPointXY_t	 nodeXY;
-	DeltaAltitude_t	 nodeZ;
+	ITS_Container_DeltaAltitude_t	 nodeZ;
 	SignalGroupID_t	 signalGroupID;
 	/*
 	 * This type is extensible,

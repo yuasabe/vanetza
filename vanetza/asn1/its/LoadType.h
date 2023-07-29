@@ -13,8 +13,8 @@
 
 /* Including external dependencies */
 #include "GoodsType.h"
-#include "DangerousGoodsBasic.h"
-#include "SpecialTransportType.h"
+#include "ITS-Container_DangerousGoodsBasic.h"
+#include "ITS-Container_SpecialTransportType.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -24,8 +24,8 @@ extern "C" {
 /* LoadType */
 typedef struct LoadType {
 	GoodsType_t	 goodsType;
-	DangerousGoodsBasic_t	 dangerousGoodsType;
-	SpecialTransportType_t	 specialTransportType;
+	ITS_Container_DangerousGoodsBasic_t	 dangerousGoodsType;
+	ITS_Container_SpecialTransportType_t	 specialTransportType;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

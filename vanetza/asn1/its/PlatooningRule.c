@@ -96,7 +96,7 @@ asn_TYPE_member_t asn_MBR_PlatooningRule_1[] = {
 	{ ATF_POINTER, 5, offsetof(struct PlatooningRule, platoonMaxSpeedLimit),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -113,7 +113,7 @@ asn_TYPE_member_t asn_MBR_PlatooningRule_1[] = {
 	{ ATF_POINTER, 4, offsetof(struct PlatooningRule, platoonMinSpeedLimit),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -130,7 +130,7 @@ asn_TYPE_member_t asn_MBR_PlatooningRule_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct PlatooningRule, platoonSpeedRecommendation),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

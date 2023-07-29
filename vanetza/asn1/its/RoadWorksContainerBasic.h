@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "RoadworksSubCauseCode.h"
-#include "LightBarSirenInUse.h"
+#include "ITS-Container_RoadworksSubCauseCode.h"
+#include "ITS-Container_LightBarSirenInUse.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -25,8 +25,8 @@ struct ClosedLanes;
 
 /* RoadWorksContainerBasic */
 typedef struct RoadWorksContainerBasic {
-	RoadworksSubCauseCode_t	*roadworksSubCauseCode;	/* OPTIONAL */
-	LightBarSirenInUse_t	 lightBarSirenInUse;
+	ITS_Container_RoadworksSubCauseCode_t	*roadworksSubCauseCode;	/* OPTIONAL */
+	ITS_Container_LightBarSirenInUse_t	 lightBarSirenInUse;
 	struct ClosedLanes	*closedLanes;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
@@ -43,7 +43,7 @@ extern asn_TYPE_member_t asn_MBR_RoadWorksContainerBasic_1[3];
 #endif
 
 /* Referred external types */
-#include "ClosedLanes.h"
+#include "ITS-Container_ClosedLanes.h"
 
 #endif	/* _RoadWorksContainerBasic_H_ */
 #include "asn_internal.h"

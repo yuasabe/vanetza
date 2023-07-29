@@ -15,7 +15,7 @@
 #include "PriorityLevel.h"
 #include "SaeAutomationLevels.h"
 #include "GapBetweenVehicles.h"
-#include "SpeedValue.h"
+#include "ITS-Container_SpeedValue.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -32,9 +32,9 @@ typedef struct AutomatedVehicleRule {
 	SaeAutomationLevels_t	 allowedSaeAutomationLevels;
 	GapBetweenVehicles_t	*minGapBetweenVehicles;	/* OPTIONAL */
 	GapBetweenVehicles_t	*recGapBetweenVehicles;	/* OPTIONAL */
-	SpeedValue_t	*automatedVehicleMaxSpeedLimit;	/* OPTIONAL */
-	SpeedValue_t	*automatedVehicleMinSpeedLimit;	/* OPTIONAL */
-	SpeedValue_t	*automatedVehicleSpeedRecommendation;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*automatedVehicleMaxSpeedLimit;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*automatedVehicleMinSpeedLimit;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*automatedVehicleSpeedRecommendation;	/* OPTIONAL */
 	struct RoadSignCodes	*roadSignCodes;	/* OPTIONAL */
 	struct ConstraintTextLines2	*extraText;	/* OPTIONAL */
 	/*

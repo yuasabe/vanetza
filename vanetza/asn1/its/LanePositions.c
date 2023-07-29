@@ -23,7 +23,7 @@ asn_TYPE_member_t asn_MBR_LanePositions_1[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
-		&asn_DEF_LanePosition,
+		&asn_DEF_ITS_Container_LanePosition,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

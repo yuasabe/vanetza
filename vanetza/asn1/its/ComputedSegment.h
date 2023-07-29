@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "Zid.h"
-#include "LanePosition.h"
+#include "ITS-Container_LanePosition.h"
 #include "IviLaneWidth.h"
 #include "NativeInteger.h"
 #include "constr_SEQUENCE.h"
@@ -28,7 +28,7 @@ struct DeltaReferencePosition;
 /* ComputedSegment */
 typedef struct ComputedSegment {
 	Zid_t	 zoneId;
-	LanePosition_t	 laneNumber;
+	ITS_Container_LanePosition_t	 laneNumber;
 	IviLaneWidth_t	 laneWidth;
 	long	*offsetDistance;	/* OPTIONAL */
 	struct DeltaReferencePosition	*offsetPosition;	/* OPTIONAL */
@@ -47,7 +47,7 @@ extern asn_TYPE_member_t asn_MBR_ComputedSegment_1[5];
 #endif
 
 /* Referred external types */
-#include "DeltaReferencePosition.h"
+#include "ITS-Container_DeltaReferencePosition.h"
 
 #endif	/* _ComputedSegment_H_ */
 #include "asn_internal.h"

@@ -12,9 +12,9 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Latitude.h"
-#include "Longitude.h"
-#include "Altitude.h"
+#include "ITS-Container_Latitude.h"
+#include "ITS-Container_Longitude.h"
+#include "ITS-Container_Altitude.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -23,9 +23,9 @@ extern "C" {
 
 /* AbsolutePositionWAltitude */
 typedef struct AbsolutePositionWAltitude {
-	Latitude_t	 latitude;
-	Longitude_t	 longitude;
-	Altitude_t	 altitude;
+	ITS_Container_Latitude_t	 latitude;
+	ITS_Container_Longitude_t	 longitude;
+	ITS_Container_Altitude_t	 altitude;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

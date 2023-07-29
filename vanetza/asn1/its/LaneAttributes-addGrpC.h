@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "VehicleHeight.h"
-#include "VehicleMass.h"
+#include "DSRC_VehicleHeight.h"
+#include "ITS-Container_VehicleMass.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -22,8 +22,8 @@ extern "C" {
 
 /* LaneAttributes-addGrpC */
 typedef struct LaneAttributes_addGrpC {
-	VehicleHeight_t	*maxVehicleHeight;	/* OPTIONAL */
-	VehicleMass_t	*maxVehicleWeight;	/* OPTIONAL */
+	DSRC_VehicleHeight_t	*maxVehicleHeight;	/* OPTIONAL */
+	ITS_Container_VehicleMass_t	*maxVehicleWeight;	/* OPTIONAL */
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

@@ -79,7 +79,7 @@ asn_TYPE_member_t asn_MBR_AutomatedVehicleRule_1[] = {
 	{ ATF_POINTER, 5, offsetof(struct AutomatedVehicleRule, automatedVehicleMaxSpeedLimit),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -96,7 +96,7 @@ asn_TYPE_member_t asn_MBR_AutomatedVehicleRule_1[] = {
 	{ ATF_POINTER, 4, offsetof(struct AutomatedVehicleRule, automatedVehicleMinSpeedLimit),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -113,7 +113,7 @@ asn_TYPE_member_t asn_MBR_AutomatedVehicleRule_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct AutomatedVehicleRule, automatedVehicleSpeedRecommendation),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SpeedValue,
+		&asn_DEF_ITS_Container_SpeedValue,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

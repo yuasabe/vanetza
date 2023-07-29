@@ -41,7 +41,7 @@ extern asn_per_constraints_t asn_PER_type_DeltaReferencePositions_constr_1;
 #endif
 
 /* Referred external types */
-#include "DeltaReferencePosition.h"
+#include "ITS-Container_DeltaReferencePosition.h"
 
 #endif	/* _DeltaReferencePositions_H_ */
 #include "asn_internal.h"

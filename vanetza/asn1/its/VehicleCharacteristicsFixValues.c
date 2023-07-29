@@ -23,7 +23,7 @@ asn_TYPE_member_t asn_MBR_VehicleCharacteristicsFixValues_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct VehicleCharacteristicsFixValues, choice.simpleVehicleType),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_StationType,
+		&asn_DEF_ITS_Container_StationType,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -40,7 +40,7 @@ asn_TYPE_member_t asn_MBR_VehicleCharacteristicsFixValues_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct VehicleCharacteristicsFixValues, choice.euVehicleCategoryCode),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_EuVehicleCategoryCode,
+		&asn_DEF_ElectronicRegistrationIdentificationVehicleDataModule_EuVehicleCategoryCode,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -57,7 +57,7 @@ asn_TYPE_member_t asn_MBR_VehicleCharacteristicsFixValues_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct VehicleCharacteristicsFixValues, choice.iso3833VehicleType),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Iso3833VehicleType,
+		&asn_DEF_ElectronicRegistrationIdentificationVehicleDataModule_Iso3833VehicleType,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -125,7 +125,7 @@ asn_TYPE_member_t asn_MBR_VehicleCharacteristicsFixValues_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct VehicleCharacteristicsFixValues, choice.usage),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_VehicleRole,
+		&asn_DEF_ITS_Container_VehicleRole,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

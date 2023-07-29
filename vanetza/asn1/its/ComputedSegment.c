@@ -65,7 +65,7 @@ asn_TYPE_member_t asn_MBR_ComputedSegment_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ComputedSegment, laneNumber),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_LanePosition,
+		&asn_DEF_ITS_Container_LanePosition,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -116,7 +116,7 @@ asn_TYPE_member_t asn_MBR_ComputedSegment_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ComputedSegment, offsetPosition),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_DeltaReferencePosition,
+		&asn_DEF_ITS_Container_DeltaReferencePosition,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

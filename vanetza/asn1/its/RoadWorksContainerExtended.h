@@ -12,9 +12,9 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "LightBarSirenInUse.h"
-#include "SpeedLimit.h"
-#include "TrafficRule.h"
+#include "ITS-Container_LightBarSirenInUse.h"
+#include "ITS-Container_SpeedLimit.h"
+#include "ITS-Container_TrafficRule.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -31,14 +31,14 @@ struct ReferenceDenms;
 
 /* RoadWorksContainerExtended */
 typedef struct RoadWorksContainerExtended {
-	LightBarSirenInUse_t	*lightBarSirenInUse;	/* OPTIONAL */
+	ITS_Container_LightBarSirenInUse_t	*lightBarSirenInUse;	/* OPTIONAL */
 	struct ClosedLanes	*closedLanes;	/* OPTIONAL */
 	struct RestrictedTypes	*restriction;	/* OPTIONAL */
-	SpeedLimit_t	*speedLimit;	/* OPTIONAL */
+	ITS_Container_SpeedLimit_t	*speedLimit;	/* OPTIONAL */
 	struct CauseCode	*incidentIndication;	/* OPTIONAL */
 	struct ItineraryPath	*recommendedPath;	/* OPTIONAL */
 	struct DeltaReferencePosition	*startingPointSpeedLimit;	/* OPTIONAL */
-	TrafficRule_t	*trafficFlowRule;	/* OPTIONAL */
+	ITS_Container_TrafficRule_t	*trafficFlowRule;	/* OPTIONAL */
 	struct ReferenceDenms	*referenceDenms;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
@@ -55,11 +55,11 @@ extern asn_TYPE_member_t asn_MBR_RoadWorksContainerExtended_1[9];
 #endif
 
 /* Referred external types */
-#include "ClosedLanes.h"
-#include "RestrictedTypes.h"
-#include "CauseCode.h"
-#include "ItineraryPath.h"
-#include "DeltaReferencePosition.h"
+#include "ITS-Container_ClosedLanes.h"
+#include "ITS-Container_RestrictedTypes.h"
+#include "ITS-Container_CauseCode.h"
+#include "ITS-Container_ItineraryPath.h"
+#include "ITS-Container_DeltaReferencePosition.h"
 #include "ReferenceDenms.h"
 
 #endif	/* _RoadWorksContainerExtended_H_ */

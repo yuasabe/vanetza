@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Longitude.h"
-#include "Latitude.h"
+#include "ITS-Container_Longitude.h"
+#include "ITS-Container_Latitude.h"
 #include "Elevation.h"
 #include "HeadingIso.h"
 #include "TimeConfidence.h"
@@ -33,8 +33,8 @@ struct SpeedandHeadingIsoandThrottleConfidence;
 /* FullPositionVector */
 typedef struct FullPositionVector {
 	struct DDateTime	*utcTime;	/* OPTIONAL */
-	Longitude_t	 Long;
-	Latitude_t	 lat;
+	ITS_Container_Longitude_t	 Long;
+	ITS_Container_Latitude_t	 lat;
 	Elevation_t	*elevation;	/* OPTIONAL */
 	HeadingIso_t	*heading;	/* OPTIONAL */
 	struct TransmissionAndSpeed	*speed;	/* OPTIONAL */

@@ -57,7 +57,7 @@ asn_TYPE_member_t asn_MBR_AvcPart_1[] = {
 	{ ATF_POINTER, 5, offsetof(struct AvcPart, direction),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Direction,
+		&asn_DEF_IVI_Direction,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

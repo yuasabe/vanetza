@@ -62,7 +62,7 @@ asn_TYPE_member_t asn_MBR_RequestorType_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct RequestorType, iso3883),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Iso3833VehicleType,
+		&asn_DEF_ElectronicRegistrationIdentificationVehicleDataModule_Iso3833VehicleType,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

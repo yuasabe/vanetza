@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "ZoneIds.h"
-#include "RoadType.h"
+#include "ITS-Container_RoadType.h"
 #include "LaneConfiguration.h"
 #include "constr_SEQUENCE.h"
 
@@ -24,7 +24,7 @@ extern "C" {
 /* RccPart */
 typedef struct RccPart {
 	ZoneIds_t	 relevanceZoneIds;
-	RoadType_t	 roadType;
+	ITS_Container_RoadType_t	 roadType;
 	LaneConfiguration_t	 laneConfiguration;
 	/*
 	 * This type is extensible,

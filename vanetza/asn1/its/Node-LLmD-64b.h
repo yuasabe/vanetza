@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Longitude.h"
-#include "Latitude.h"
+#include "ITS-Container_Longitude.h"
+#include "ITS-Container_Latitude.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -22,8 +22,8 @@ extern "C" {
 
 /* Node-LLmD-64b */
 typedef struct Node_LLmD_64b {
-	Longitude_t	 lon;
-	Latitude_t	 lat;
+	ITS_Container_Longitude_t	 lon;
+	ITS_Container_Latitude_t	 lat;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

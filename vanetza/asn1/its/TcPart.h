@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "ZoneIds.h"
-#include "Direction.h"
+#include "IVI_Direction.h"
 #include "NativeInteger.h"
 #include "OCTET_STRING.h"
 #include "IviType.h"
@@ -34,7 +34,7 @@ struct VehicleCharacteristicsList;
 typedef struct TcPart {
 	struct ZoneIds	*detectionZoneIds;	/* OPTIONAL */
 	ZoneIds_t	 relevanceZoneIds;
-	Direction_t	*direction;	/* OPTIONAL */
+	IVI_Direction_t	*direction;	/* OPTIONAL */
 	struct ZoneIds	*driverAwarenessZoneIds;	/* OPTIONAL */
 	long	*minimumAwarenessTime;	/* OPTIONAL */
 	struct LanePositions	*applicableLanes;	/* OPTIONAL */

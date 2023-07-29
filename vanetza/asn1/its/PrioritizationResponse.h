@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "StationID.h"
+#include "ITS-Container_StationID.h"
 #include "PrioritizationResponseStatus.h"
 #include "SignalGroupID.h"
 #include "constr_SEQUENCE.h"
@@ -23,7 +23,7 @@ extern "C" {
 
 /* PrioritizationResponse */
 typedef struct PrioritizationResponse {
-	StationID_t	 stationID;
+	ITS_Container_StationID_t	 stationID;
 	PrioritizationResponseStatus_t	 priorState;
 	SignalGroupID_t	 signalGroup;
 	/*

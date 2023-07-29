@@ -139,7 +139,7 @@ asn_TYPE_member_t asn_MBR_GicPart_1[] = {
 	{ ATF_POINTER, 6, offsetof(struct GicPart, its_Rrid),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_VarLengthNumber,
+		&asn_DEF_CITSapplMgmtIDs_VarLengthNumber,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -173,7 +173,7 @@ asn_TYPE_member_t asn_MBR_GicPart_1[] = {
 	{ ATF_POINTER, 4, offsetof(struct GicPart, direction),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Direction,
+		&asn_DEF_IVI_Direction,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

@@ -17,7 +17,7 @@
 #include "MaxNoOfVehicles.h"
 #include "MaxLenghtOfPlatoon.h"
 #include "GapBetweenVehicles.h"
-#include "SpeedValue.h"
+#include "ITS-Container_SpeedValue.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -35,9 +35,9 @@ typedef struct PlatooningRule {
 	MaxNoOfVehicles_t	*maxNoOfVehicles;	/* OPTIONAL */
 	MaxLenghtOfPlatoon_t	*maxLenghtOfPlatoon;	/* OPTIONAL */
 	GapBetweenVehicles_t	*minGapBetweenVehicles;	/* OPTIONAL */
-	SpeedValue_t	*platoonMaxSpeedLimit;	/* OPTIONAL */
-	SpeedValue_t	*platoonMinSpeedLimit;	/* OPTIONAL */
-	SpeedValue_t	*platoonSpeedRecommendation;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*platoonMaxSpeedLimit;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*platoonMinSpeedLimit;	/* OPTIONAL */
+	ITS_Container_SpeedValue_t	*platoonSpeedRecommendation;	/* OPTIONAL */
 	struct RoadSignCodes	*roadSignCodes;	/* OPTIONAL */
 	struct ConstraintTextLines2	*extraText;	/* OPTIONAL */
 	/*

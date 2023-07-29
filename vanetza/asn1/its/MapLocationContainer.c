@@ -11,7 +11,7 @@ asn_TYPE_member_t asn_MBR_MapLocationContainer_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct MapLocationContainer, reference),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_MapReference,
+		&asn_DEF_IVI_MapReference,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

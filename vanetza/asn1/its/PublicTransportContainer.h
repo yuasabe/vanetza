@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "EmbarkationStatus.h"
+#include "ITS-Container_EmbarkationStatus.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -24,7 +24,7 @@ struct PtActivation;
 
 /* PublicTransportContainer */
 typedef struct PublicTransportContainer {
-	EmbarkationStatus_t	 embarkationStatus;
+	ITS_Container_EmbarkationStatus_t	 embarkationStatus;
 	struct PtActivation	*ptActivation;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
@@ -41,7 +41,7 @@ extern asn_TYPE_member_t asn_MBR_PublicTransportContainer_1[2];
 #endif
 
 /* Referred external types */
-#include "PtActivation.h"
+#include "ITS-Container_PtActivation.h"
 
 #endif	/* _PublicTransportContainer_H_ */
 #include "asn_internal.h"

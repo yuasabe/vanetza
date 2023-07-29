@@ -14,7 +14,7 @@
 /* Including external dependencies */
 #include "Provider.h"
 #include "IviIdentificationNumber.h"
-#include "TimestampIts.h"
+#include "ITS-Container_TimestampIts.h"
 #include "IviStatus.h"
 #include "constr_SEQUENCE.h"
 
@@ -30,9 +30,9 @@ struct ConnectedDenms;
 typedef struct IviManagementContainer {
 	Provider_t	 serviceProviderId;
 	IviIdentificationNumber_t	 iviIdentificationNumber;
-	TimestampIts_t	*timeStamp;	/* OPTIONAL */
-	TimestampIts_t	*validFrom;	/* OPTIONAL */
-	TimestampIts_t	*validTo;	/* OPTIONAL */
+	ITS_Container_TimestampIts_t	*timeStamp;	/* OPTIONAL */
+	ITS_Container_TimestampIts_t	*validFrom;	/* OPTIONAL */
+	ITS_Container_TimestampIts_t	*validTo;	/* OPTIONAL */
 	struct IviIdentificationNumbers	*connectedIviStructures;	/* OPTIONAL */
 	IviStatus_t	 iviStatus;
 	/*

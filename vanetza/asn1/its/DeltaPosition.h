@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "DeltaLatitude.h"
-#include "DeltaLongitude.h"
+#include "ITS-Container_DeltaLatitude.h"
+#include "ITS-Container_DeltaLongitude.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -22,8 +22,8 @@ extern "C" {
 
 /* DeltaPosition */
 typedef struct DeltaPosition {
-	DeltaLatitude_t	 deltaLatitude;
-	DeltaLongitude_t	 deltaLongitude;
+	ITS_Container_DeltaLatitude_t	 deltaLatitude;
+	ITS_Container_DeltaLongitude_t	 deltaLongitude;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "ZoneIds.h"
-#include "Direction.h"
+#include "IVI_Direction.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -31,7 +31,7 @@ struct PlatooningRules;
 typedef struct AvcPart {
 	struct ZoneIds	*detectionZoneIds;	/* OPTIONAL */
 	ZoneIds_t	 relevanceZoneIds;
-	Direction_t	*direction;	/* OPTIONAL */
+	IVI_Direction_t	*direction;	/* OPTIONAL */
 	struct LanePositions	*applicableLanes;	/* OPTIONAL */
 	struct VehicleCharacteristicsList	*vehicleCharacteristics;	/* OPTIONAL */
 	struct AutomatedVehicleRules	*automatedVehicleRules;	/* OPTIONAL */

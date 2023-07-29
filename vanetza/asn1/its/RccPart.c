@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_RccPart_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct RccPart, roadType),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RoadType,
+		&asn_DEF_ITS_Container_RoadType,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

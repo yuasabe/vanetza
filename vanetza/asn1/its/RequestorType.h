@@ -15,7 +15,7 @@
 #include "BasicVehicleRole.h"
 #include "RequestSubRole.h"
 #include "RequestImportanceLevel.h"
-#include "Iso3833VehicleType.h"
+#include "ElectronicRegistrationIdentificationVehicleDataModule_Iso3833VehicleType.h"
 #include "VehicleType.h"
 #include "constr_SEQUENCE.h"
 
@@ -31,7 +31,7 @@ typedef struct RequestorType {
 	BasicVehicleRole_t	 role;
 	RequestSubRole_t	*subrole;	/* OPTIONAL */
 	RequestImportanceLevel_t	*request;	/* OPTIONAL */
-	Iso3833VehicleType_t	*iso3883;	/* OPTIONAL */
+	ElectronicRegistrationIdentificationVehicleDataModule_Iso3833VehicleType_t	*iso3883;	/* OPTIONAL */
 	VehicleType_t	*hpmsType;	/* OPTIONAL */
 	struct Reg_RequestorType	*regional;	/* OPTIONAL */
 	/*

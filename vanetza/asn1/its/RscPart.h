@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "ZoneIds.h"
-#include "Direction.h"
+#include "IVI_Direction.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -29,7 +29,7 @@ struct RoadSurfaceDynamicCharacteristics;
 typedef struct RscPart {
 	struct ZoneIds	*detectionZoneIds;	/* OPTIONAL */
 	ZoneIds_t	 relevanceZoneIds;
-	Direction_t	*direction;	/* OPTIONAL */
+	IVI_Direction_t	*direction;	/* OPTIONAL */
 	struct RoadSurfaceStaticCharacteristics	*roadSurfaceStaticCharacteristics;	/* OPTIONAL */
 	struct RoadSurfaceDynamicCharacteristics	*roadSurfaceDynamicCharacteristics;	/* OPTIONAL */
 	

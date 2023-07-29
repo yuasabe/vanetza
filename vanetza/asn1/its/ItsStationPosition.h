@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "StationID.h"
+#include "ITS-Container_StationID.h"
 #include "LaneID.h"
 #include "TimeReference.h"
 #include "constr_SEQUENCE.h"
@@ -26,7 +26,7 @@ struct NodeOffsetPointXY;
 
 /* ItsStationPosition */
 typedef struct ItsStationPosition {
-	StationID_t	 stationID;
+	ITS_Container_StationID_t	 stationID;
 	LaneID_t	*laneID;	/* OPTIONAL */
 	struct NodeOffsetPointXY	*nodeXY;	/* OPTIONAL */
 	TimeReference_t	*timeReference;	/* OPTIONAL */

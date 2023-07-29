@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Altitude.h"
+#include "ITS-Container_Altitude.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -21,7 +21,7 @@ extern "C" {
 
 /* Position3D-addGrpC */
 typedef struct Position3D_addGrpC {
-	Altitude_t	 altitude;
+	ITS_Container_Altitude_t	 altitude;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

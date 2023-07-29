@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_IviManagementContainer_1[] = {
 	{ ATF_POINTER, 4, offsetof(struct IviManagementContainer, timeStamp),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_TimestampIts,
+		&asn_DEF_ITS_Container_TimestampIts,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -62,7 +62,7 @@ asn_TYPE_member_t asn_MBR_IviManagementContainer_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct IviManagementContainer, validFrom),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_TimestampIts,
+		&asn_DEF_ITS_Container_TimestampIts,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -79,7 +79,7 @@ asn_TYPE_member_t asn_MBR_IviManagementContainer_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct IviManagementContainer, validTo),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_TimestampIts,
+		&asn_DEF_ITS_Container_TimestampIts,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

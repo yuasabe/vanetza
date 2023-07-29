@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "MapReference.h"
+#include "IVI_MapReference.h"
 #include "MlcParts.h"
 #include "constr_SEQUENCE.h"
 
@@ -22,7 +22,7 @@ extern "C" {
 
 /* MapLocationContainer */
 typedef struct MapLocationContainer {
-	MapReference_t	 reference;
+	IVI_MapReference_t	 reference;
 	MlcParts_t	 parts;
 	
 	/* Context for parsing across buffer boundaries */

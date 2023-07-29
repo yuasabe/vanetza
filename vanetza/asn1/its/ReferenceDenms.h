@@ -41,7 +41,7 @@ extern asn_per_constraints_t asn_PER_type_ReferenceDenms_constr_1;
 #endif
 
 /* Referred external types */
-#include "ActionID.h"
+#include "ITS-Container_ActionID.h"
 
 #endif	/* _ReferenceDenms_H_ */
 #include "asn_internal.h"

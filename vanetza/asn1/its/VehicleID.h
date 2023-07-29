@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include "TemporaryID.h"
-#include "StationID.h"
+#include "ITS-Container_StationID.h"
 #include "constr_CHOICE.h"
 
 #ifdef __cplusplus
@@ -32,7 +32,7 @@ typedef struct VehicleID {
 	VehicleID_PR present;
 	union VehicleID_u {
 		TemporaryID_t	 entityID;
-		StationID_t	 stationID;
+		ITS_Container_StationID_t	 stationID;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */

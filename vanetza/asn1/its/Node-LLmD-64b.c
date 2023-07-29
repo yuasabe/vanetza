@@ -11,7 +11,7 @@ asn_TYPE_member_t asn_MBR_Node_LLmD_64b_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Node_LLmD_64b, lon),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Longitude,
+		&asn_DEF_ITS_Container_Longitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_Node_LLmD_64b_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Node_LLmD_64b, lat),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Latitude,
+		&asn_DEF_ITS_Container_Latitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

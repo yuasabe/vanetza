@@ -182,7 +182,7 @@ asn_TYPE_member_t asn_MBR_IntersectionGeometry_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct IntersectionGeometry, laneWidth),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_LaneWidth,
+		&asn_DEF_DSRC_LaneWidth,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

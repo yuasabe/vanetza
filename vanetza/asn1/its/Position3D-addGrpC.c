@@ -11,7 +11,7 @@ asn_TYPE_member_t asn_MBR_Position3D_addGrpC_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Position3D_addGrpC, altitude),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Altitude,
+		&asn_DEF_ITS_Container_Altitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)

@@ -12,7 +12,7 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Direction.h"
+#include "IVI_Direction.h"
 #include "NativeInteger.h"
 #include "IviType.h"
 #include "IviPurpose.h"
@@ -37,7 +37,7 @@ typedef struct GicPart {
 	struct ZoneIds	*detectionZoneIds;	/* OPTIONAL */
 	struct VarLengthNumber	*its_Rrid;	/* OPTIONAL */
 	struct ZoneIds	*relevanceZoneIds;	/* OPTIONAL */
-	Direction_t	*direction;	/* OPTIONAL */
+	IVI_Direction_t	*direction;	/* OPTIONAL */
 	struct ZoneIds	*driverAwarenessZoneIds;	/* OPTIONAL */
 	long	*minimumAwarenessTime;	/* OPTIONAL */
 	struct LanePositions	*applicableLanes;	/* OPTIONAL */
@@ -70,7 +70,7 @@ extern asn_TYPE_member_t asn_MBR_GicPart_1[16];
 
 /* Referred external types */
 #include "ZoneIds.h"
-#include "VarLengthNumber.h"
+#include "CITSapplMgmtIDs_VarLengthNumber.h"
 #include "LanePositions.h"
 #include "VehicleCharacteristicsList.h"
 #include "ConstraintTextLines1.h"

@@ -12,8 +12,8 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "Latitude.h"
-#include "Longitude.h"
+#include "ITS-Container_Latitude.h"
+#include "ITS-Container_Longitude.h"
 #include "constr_SEQUENCE.h"
 
 #ifdef __cplusplus
@@ -22,8 +22,8 @@ extern "C" {
 
 /* AbsolutePosition */
 typedef struct AbsolutePosition {
-	Latitude_t	 latitude;
-	Longitude_t	 longitude;
+	ITS_Container_Latitude_t	 latitude;
+	ITS_Container_Longitude_t	 longitude;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

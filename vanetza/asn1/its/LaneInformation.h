@@ -12,9 +12,9 @@
 #include "asn_application.h"
 
 /* Including external dependencies */
-#include "LanePosition.h"
-#include "Direction.h"
-#include "LaneType.h"
+#include "ITS-Container_LanePosition.h"
+#include "IVI_Direction.h"
+#include "IVI_LaneType.h"
 #include "LaneStatus.h"
 #include "IviLaneWidth.h"
 #include "constr_SEQUENCE.h"
@@ -33,10 +33,10 @@ struct RoadSurfaceDynamicCharacteristics;
 
 /* LaneInformation */
 typedef struct LaneInformation {
-	LanePosition_t	 laneNumber;
-	Direction_t	 direction;
+	ITS_Container_LanePosition_t	 laneNumber;
+	IVI_Direction_t	 direction;
 	struct InternationalSign_applicablePeriod	*validity;	/* OPTIONAL */
-	LaneType_t	 laneType;
+	IVI_LaneType_t	 laneType;
 	struct CompleteVehicleCharacteristics	*laneTypeQualifier;	/* OPTIONAL */
 	LaneStatus_t	 laneStatus;
 	IviLaneWidth_t	*laneWidth;	/* OPTIONAL */

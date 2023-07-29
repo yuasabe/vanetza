@@ -11,7 +11,7 @@ asn_TYPE_member_t asn_MBR_AbsolutePositionWAltitude_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct AbsolutePositionWAltitude, latitude),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Latitude,
+		&asn_DEF_ITS_Container_Latitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_AbsolutePositionWAltitude_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct AbsolutePositionWAltitude, longitude),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Longitude,
+		&asn_DEF_ITS_Container_Longitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_AbsolutePositionWAltitude_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct AbsolutePositionWAltitude, altitude),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Altitude,
+		&asn_DEF_ITS_Container_Altitude,
 		0,
 		{
 #if !defined(ASN_DISABLE_OER_SUPPORT)
