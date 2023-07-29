@@ -66,16 +66,16 @@ void CamApplication::on_timer(Clock::time_point)
     schedule_timer();
     vanetza::asn1::Cam message;
 
-    ItsPduHeader_t& header = message->header;
+    ITS_Container_ItsPduHeader_t& header = message->header;
     header.protocolVersion = 2;
-    header.messageID = ItsPduHeader__messageID_cam;
+    header.messageID = ITS_Container_ItsPduHeader__messageID_cam;
     header.stationID = 1; // some dummy value
 
     const auto time_now = duration_cast<milliseconds>(runtime_.now().time_since_epoch());
     uint16_t gen_delta_time = time_now.count();
 
     CoopAwareness_t& cam = message->cam;
-    cam.generationDeltaTime = gen_delta_time * GenerationDeltaTime_oneMilliSec;
+    cam.generationDeltaTime = gen_delta_time * CAM_PDU_Descriptions_GenerationDeltaTime_oneMilliSec;
 
     auto position = positioning_.position_fix();
 
@@ -84,31 +84,31 @@ void CamApplication::on_timer(Clock::time_point)
         return;
     }
 
-    BasicContainer_t& basic = cam.camParameters.basicContainer;
-    basic.stationType = StationType_passengerCar;
+    CAM_PDU_Descriptions_BasicContainer_t& basic = cam.camParameters.basicContainer;
+    basic.stationType = ITS_Container_StationType_passengerCar;
     copy(position, basic.referencePosition);
 
     cam.camParameters.highFrequencyContainer.present = HighFrequencyContainer_PR_basicVehicleContainerHighFrequency;
 
     BasicVehicleContainerHighFrequency& bvc = cam.camParameters.highFrequencyContainer.choice.basicVehicleContainerHighFrequency;
     bvc.heading.headingValue = 0;
-    bvc.heading.headingConfidence = HeadingConfidence_equalOrWithinOneDegree;
+    bvc.heading.headingConfidence = ITS_Container_HeadingConfidence_equalOrWithinOneDegree;
 
     bvc.speed.speedValue = 0;
-    bvc.speed.speedConfidence = SpeedConfidence_equalOrWithinOneCentimeterPerSec;
+    bvc.speed.speedConfidence = ITS_Container_SpeedConfidence_equalOrWithinOneCentimeterPerSec;
 
-    bvc.driveDirection = DriveDirection_forward;
-    bvc.longitudinalAcceleration.longitudinalAccelerationValue = LongitudinalAccelerationValue_unavailable;
+    bvc.driveDirection = ITS_Container_DriveDirection_forward;
+    bvc.longitudinalAcceleration.longitudinalAccelerationValue = ITS_Container_LongitudinalAccelerationValue_unavailable;
 
-    bvc.vehicleLength.vehicleLengthValue = VehicleLengthValue_unavailable;
-    bvc.vehicleLength.vehicleLengthConfidenceIndication = VehicleLengthConfidenceIndication_noTrailerPresent;
-    bvc.vehicleWidth = VehicleWidth_unavailable;
+    bvc.vehicleLength.vehicleLengthValue = ITS_Container_VehicleLengthValue_unavailable;
+    bvc.vehicleLength.vehicleLengthConfidenceIndication = ITS_Container_VehicleLengthConfidenceIndication_noTrailerPresent;
+    bvc.vehicleWidth = ITS_Container_VehicleWidth_unavailable;
 
     bvc.curvature.curvatureValue = 0;
-    bvc.curvature.curvatureConfidence = CurvatureConfidence_unavailable;
-    bvc.curvatureCalculationMode = CurvatureCalculationMode_yawRateUsed;
+    bvc.curvature.curvatureConfidence = ITS_Container_CurvatureConfidence_unavailable;
+    bvc.curvatureCalculationMode = ITS_Container_CurvatureCalculationMode_yawRateUsed;
 
-    bvc.yawRate.yawRateValue = YawRateValue_unavailable;
+    bvc.yawRate.yawRateValue = ITS_Container_YawRateValue_unavailable;
 
     std::string error;
     if (!message.validate(error)) {
