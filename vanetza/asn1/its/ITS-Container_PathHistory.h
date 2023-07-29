@@ -20,11 +20,11 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PathPoint;
+struct ITS_Container_PathPoint;
 
 /* ITS-Container_PathHistory */
 typedef struct ITS_Container_PathHistory {
-	A_SEQUENCE_OF(struct PathPoint) list;
+	A_SEQUENCE_OF(struct ITS_Container_PathPoint) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

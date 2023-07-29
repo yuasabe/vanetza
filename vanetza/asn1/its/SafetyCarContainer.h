@@ -22,12 +22,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct CauseCode;
+struct ITS_Container_CauseCode;
 
 /* SafetyCarContainer */
 typedef struct SafetyCarContainer {
 	ITS_Container_LightBarSirenInUse_t	 lightBarSirenInUse;
-	struct CauseCode	*incidentIndication;	/* OPTIONAL */
+	struct ITS_Container_CauseCode	*incidentIndication;	/* OPTIONAL */
 	ITS_Container_TrafficRule_t	*trafficRule;	/* OPTIONAL */
 	ITS_Container_SpeedLimit_t	*speedLimit;	/* OPTIONAL */
 	

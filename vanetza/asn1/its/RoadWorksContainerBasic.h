@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ClosedLanes;
+struct ITS_Container_ClosedLanes;
 
 /* RoadWorksContainerBasic */
 typedef struct RoadWorksContainerBasic {
 	ITS_Container_RoadworksSubCauseCode_t	*roadworksSubCauseCode;	/* OPTIONAL */
 	ITS_Container_LightBarSirenInUse_t	 lightBarSirenInUse;
-	struct ClosedLanes	*closedLanes;	/* OPTIONAL */
+	struct ITS_Container_ClosedLanes	*closedLanes;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

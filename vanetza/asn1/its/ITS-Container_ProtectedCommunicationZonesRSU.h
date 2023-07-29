@@ -24,7 +24,7 @@ struct ProtectedCommunicationZone;
 
 /* ITS-Container_ProtectedCommunicationZonesRSU */
 typedef struct ITS_Container_ProtectedCommunicationZonesRSU {
-	A_SEQUENCE_OF(struct ProtectedCommunicationZone) list;
+	A_SEQUENCE_OF(struct ITS_Container_ProtectedCommunicationZone) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

@@ -25,7 +25,7 @@ struct PtActivation;
 /* PublicTransportContainer */
 typedef struct PublicTransportContainer {
 	ITS_Container_EmbarkationStatus_t	 embarkationStatus;
-	struct PtActivation	*ptActivation;	/* OPTIONAL */
+	struct ITS_Container_PtActivation	*ptActivation;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

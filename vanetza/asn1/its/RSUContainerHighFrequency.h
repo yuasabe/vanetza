@@ -23,7 +23,7 @@ struct ProtectedCommunicationZonesRSU;
 
 /* RSUContainerHighFrequency */
 typedef struct RSUContainerHighFrequency {
-	struct ProtectedCommunicationZonesRSU	*protectedCommunicationZonesRSU;	/* OPTIONAL */
+	struct ITS_Container_ProtectedCommunicationZonesRSU	*protectedCommunicationZonesRSU;	/* OPTIONAL */
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

@@ -35,7 +35,7 @@ typedef struct RoadWorksContainerExtended {
 	struct ClosedLanes	*closedLanes;	/* OPTIONAL */
 	struct RestrictedTypes	*restriction;	/* OPTIONAL */
 	ITS_Container_SpeedLimit_t	*speedLimit;	/* OPTIONAL */
-	struct CauseCode	*incidentIndication;	/* OPTIONAL */
+	struct ITS_Container_CauseCode	*incidentIndication;	/* OPTIONAL */
 	struct ItineraryPath	*recommendedPath;	/* OPTIONAL */
 	struct DeltaReferencePosition	*startingPointSpeedLimit;	/* OPTIONAL */
 	ITS_Container_TrafficRule_t	*trafficFlowRule;	/* OPTIONAL */

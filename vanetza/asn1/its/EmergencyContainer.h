@@ -21,12 +21,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct CauseCode;
+struct ITS_Container_CauseCode;
 
 /* EmergencyContainer */
 typedef struct EmergencyContainer {
 	ITS_Container_LightBarSirenInUse_t	 lightBarSirenInUse;
-	struct CauseCode	*incidentIndication;	/* OPTIONAL */
+	struct ITS_Container_CauseCode	*incidentIndication;	/* OPTIONAL */
 	ITS_Container_EmergencyPriority_t	*emergencyPriority;	/* OPTIONAL */
 	
 	/* Context for parsing across buffer boundaries */
